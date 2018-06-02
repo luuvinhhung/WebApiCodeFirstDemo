@@ -11,7 +11,7 @@ namespace WebApplication2.ViewModels
         public int Id { get; set; }
         public string MaLop { get; set; }
 		public string TenLop { get; set; }
-        public int GVCN_ID { get; set; }
+        //public int GVCN_ID { get; set; }
 
 		public LopModel() { }
 		public LopModel(Lop lop)
@@ -20,7 +20,7 @@ namespace WebApplication2.ViewModels
             this.MaLop = lop.Ma;
 			this.TenLop = lop.Ten;
 
-            this.GVCN_ID = lop.GVCN_ID;
+            //this.GVCN_ID = lop.GVCN_ID;
 		}
 	}
 
@@ -28,7 +28,7 @@ namespace WebApplication2.ViewModels
 	{
 		public string MaLop { get; set; }
 		public string TenLop { get; set; }
-        public int GVCN_ID { get; set; }
+        //public int GVCN_ID { get; set; }
 	}
 
 	public class UpdateClassModel : CreateClassModel

@@ -9,7 +9,7 @@ namespace Api.Models
 {
     public class ApiDBContext : DbContext
     {
-        private DbSet<GiangVien> _giangViens;
+        //private DbSet<GiangVien> _giangViens;
 
         public ApiDBContext() : base("ApiConnection")
         {
@@ -28,12 +28,9 @@ namespace Api.Models
         public DbSet<Lop> Lops { get; set; }
         public DbSet<SinhVien> SinhViens { get; set; }
         public DbSet<GiangVien> GiangViens { get; set; }
-        public DbSet<GiangVienLop> GiangVienLops { get; set; }
 
         public override int SaveChanges()
         {
-            //
-
             return base.SaveChanges();
         }
     }

@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiDBContext.cs" />
-    <Compile Include="GiangVienLop.cs" />
     <Compile Include="Lop.cs" />
     <Compile Include="GiangVien.cs" />
     <Compile Include="IEntity.cs" />

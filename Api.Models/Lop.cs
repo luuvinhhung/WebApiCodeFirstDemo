@@ -10,8 +10,8 @@ namespace Api.Models
 	{
 		public string Ma { get; set; }
 		public string Ten { get; set; }
-        public int GVCN_ID { get; set; }
-        public virtual ICollection<GiangVienLop> GVs { get; set; }
-		public virtual ICollection<SinhVien> Students { get; set; }
+        public virtual ICollection<SinhVien> Students { get; set; }
+        public virtual GiangVien GVCN { get; set; }
+        public virtual ICollection<GiangVien> GVs { get; set; }		
 	}
 }

@@ -11,14 +11,15 @@ namespace WebApplication2.ViewModels
         public int Id { get; set; }
         public string Ma { get; set; }
         public string Ten { get; set; }
+        public string DSLD { get; set; }
 
         public GiangVienModel() { }
-        public GiangVienModel(GiangVien lop)
+        public GiangVienModel(GiangVien GV)
         {
-            this.Id = lop.Id;
-            this.Ma = lop.Ma;
-            this.Ma = lop.Ten;
-
+            this.Id = GV.Id;
+            this.Ma = GV.Ma;
+            this.Ma = GV.Ten;
+            this.DSLD = GV.LopDays.ToString();
         }
     }
 

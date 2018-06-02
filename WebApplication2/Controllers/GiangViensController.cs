@@ -86,13 +86,15 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult GetAll()
+        public IHttpActionResult GetAll(GiangVienModel model)
         {
+            //GiangVien GV = this._db.GiangViens.FirstOrDefault(x => x.Id == model.Id);
+            //var DSLD = GV.LopDays;
             var DSGV = this._db.GiangViens.Select(x => new GiangVienModel()
             {
+                Id = x.Id,
                 Ma = x.Ma,
                 Ten = x.Ten,
-                Id = x.Id
             });
 
             return Ok(DSGV);

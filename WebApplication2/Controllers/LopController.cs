@@ -38,7 +38,7 @@ namespace WebApplication2.Controllers
 				Lop lop = new Lop();
 				lop.Ma = model.MaLop;
 				lop.Ten = model.TenLop;
-                lop.GVCN_ID = model.GVCN_ID;
+                //lop.GVCN_ID = model.GVCN_ID;
 				lop = _db.Lops.Add(lop);
 
 				this._db.SaveChanges();
@@ -90,9 +90,9 @@ namespace WebApplication2.Controllers
 
             var listLops = this._db.Lops.Select(x => new LopModel()
 			{
-				MaLop = x.Ma,
-				TenLop = x.Ten,
-				Id  = x.Id,
+                Id = x.Id,
+                MaLop = x.Ma,
+				TenLop = x.Ten,			
 			});
 
 			return Ok(listLops);
