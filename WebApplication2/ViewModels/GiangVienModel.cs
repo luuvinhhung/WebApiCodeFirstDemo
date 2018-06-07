@@ -18,8 +18,8 @@ namespace WebApplication2.ViewModels
         {
             this.Id = GV.Id;
             this.Ma = GV.Ma;
-            this.Ma = GV.Ten;
-            this.DSLD = GV.LopDays.ToString();
+            this.Ten = GV.Ten;
+            //this.DSLD = GV.LopDays.ToString();
         }
     }
 

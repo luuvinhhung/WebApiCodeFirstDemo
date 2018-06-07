@@ -17,8 +17,8 @@ namespace WebApplication2.ViewModels
 		public LopModel(Lop lop)
 		{
             this.Id = lop.Id;
-            this.MaLop = lop.Ma;
-			this.TenLop = lop.Ten;
+            this.MaLop = lop.MaLop;
+			this.TenLop = lop.TenLop;
 
             //this.GVCN_ID = lop.GVCN_ID;
 		}
