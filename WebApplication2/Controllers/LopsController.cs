@@ -187,7 +187,7 @@ namespace WebApplication2.Controllers
 			return Ok(listLops);
 		}
 
-                /**
+        /**
         * @api {GET} /giangviens/GetById?Id=Id Lấy thông tin lớp theo Id
         * @apiGroup Lop
         * @apiPermission none
